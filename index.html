@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Cross Platform MP3 Player</title>
+
+  <!-- Stylesheets -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Scripts -->
+  <script>
+    delete module.exports
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./Mp3Walker.js"></script>
+</head>
+
+<body>
+  <section class="container-fluid">
+    <section class="row" style="height:80%;">
+      <div class="col-4">
+        <div class="row">
+          <h6 style="width:100%;text-align:center;position:relative;">Loaded Songs</h6>
+        </div>
+        <div class="row" id="lstSongs" style="height:90%; overflow-y:auto;"></div>
+      </div>
+      <div id="animationSpace" class="col-8"></div>
+    </section>
+  
+    <section class="row display-inline" style="height:20%;font-size: 6vw;">
+      <button id="btnPrevious" class="col-4" type="button"><i class="fa fa-step-backward"></i></button>
+      <button id="btnPlayPause" class="col-4" type="button"><i class="fa fa-play"></i></button>
+      <button id="btnNext" class="col-4" type="button"><i class="fa fa-step-forward"></i></button>
+    </section>
+  </section>
+</body>
+
+</html>

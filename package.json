@@ -1,18 +1,14 @@
 {
-  "name": "activity-monitor",
+  "name": "mp3_player_electron",
   "version": "1.0.0",
-  "description": "CPU activity monitor",
-  "repository": "electron/simple-samples",
+  "description": "Cross platform MP3 player using Electron framework and APIs - Works on Windows, Linux, Mac",
+  "repository": "avinfinity/Electron_MP3Player",
   "main": "app.js",
   "scripts": {
     "start": "electron app.js"
   },
-  "license": "ISC",
+  "license": "GPL",
   "devDependencies": {
     "electron": "^3.0.2"
-  },
-  "dependencies": {
-    "jquery": "^3.4.1",
-    "walk": "^2.3.14"
   }
 }
